@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiselev Aleksandr - Game Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f5;
+        }
+
+        nav {
+            background: linear-gradient(45deg, #007bff, #6610f2);
+            color: white;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            color: white;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            transition: 0.3s;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        }
+
+        .header h1 {
+            font-weight: 700;
+            font-size: 3rem;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-custom {
+            background-color: #6610f2;
+            color: white;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #007bff;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .social-icons i {
+            color: white;
+            padding: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #007bff;
+        }
+
+        .darkmode-toggle {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .darkmode-toggle .fa {
+            margin-left: 10px;
+        }
+
+        .darkmode-toggle i {
+            font-size: 1.5rem;
+        }
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Custom styles for sections */
+        .info-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .game-image {
+            max-width: 80%; /* Reduced size for the game icon */
+            border-radius: 10px;
+        }
+
+        /* Custom checkbox styles */
+        .checkmark {
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        .list-check {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Kiselev Aleksandr
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">Links</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="header">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my work and skills as a game developer.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- About Section -->
+        <section id="about" class="info-section animate-up">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-center">I am Kiselev Aleksandr, a game developer with over 3 years of experience in creating and maintaining games. I specialize in Unity and have successfully launched the Android game SkyRail with over 1.5 million downloads.</p>
+            <p class="text-center">I am based in Kharkiv, and I am dedicated to building engaging and interactive gaming experiences.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="info-section animate-up">
+            <h2 class="text-center mb-4">Professional Experience</h2>
+            <h5>Game Developer - SkyRail (July 2021 – Present)</h5>
+            <ul class="list-check text-center">
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Created and maintained SkyRail, a train simulation game for Android with over 1.5 million downloads.</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Developed multiplayer functionality using Photon Engine for real-time player interactions.</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Implemented Firebase for player account management, including user authentication and data storage.</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Integrated Google Play Purchasing and Unity Ads for monetization.</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Designed and optimized responsive UI, enhancing user experience.</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Managed cloud functions for scalability and reliability.</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Developed a Java-based Telegram bot for player support.</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="info-section animate-up">
+            <h2 class="text-center mb-4">Skills</h2>
+            <ul class="list-check text-center">
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Unity Game Development</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Photon Engine (Multiplayer)</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Firebase (Authentication, Realtime Database, Cloud Functions)</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Google Play Purchasing Integration</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Unity Ads Integration</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>UI/UX Design</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Java Programming (Telegram Bots)</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Android Apps Development</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Understanding Client-Server Architecture</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Understanding of SOLID Principles</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Experience Using Multithreading</li>
+                <li><span class="checkmark"><i class="fas fa-check"></i></span>Experience Using GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="info-section animate-up">
+            <h2 class="text-center mb-4">Education</h2>
+            <h5>Kharkiv National University of Radioelectronics (NURE)</h5>
+            <p>Second-year student, Software Engineering (Specialty 121) - 2023 – Present</p>
+            <p>Gaining a strong foundation in software development, algorithms, and engineering principles.</p>
+            <h5>Samsung IT School</h5>
+            <p>Android App Development (Java) - Completed Successfully</p>
+            <p>Focused on building Android applications using Java, mastering mobile app development techniques.</p>
+            <h5>NewTone English</h5>
+            <p>C1 English Proficiency Certificate - Completed Successfully</p>
+            <p>Advanced English language course, certified at C1 level.</p>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="info-section animate-up">
+            <h2 class="text-center mb-4">My Game: SkyRail</h2>
+            <div class="text-center">
+                <img src="https://play-lh.googleusercontent.com/Z_zTA_ZL2EB__IWtB2vReLYrcICyjIztdI6CIkff3aKfHFWYfDbTWVu7ysVtPt30H28" alt="SkyRail Icon" class="game-image mb-4">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://play-lh.googleusercontent.com/g03pMGjXKLXg6Ub5Srz09iR1q-lzrzGnyAWxahny2j41coOA4WV7nqVSQ2fAmRVURQ=w526-h296-rw" alt="SkyRail Screenshot 1" class="game-image">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://play-lh.googleusercontent.com/8gjN3qp0aaoLL9KlPOaz6Mw0ntTdx0fWxQfFJIjUBUCAoUF3yOnVX5Mq2fD-TacGDTg=w526-h296-rw" alt="SkyRail Screenshot 2" class="game-image">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://play-lh.googleusercontent.com/c_KT4ufb2kH6PIY39NmXzIWOiABJWOI4ZVpKIGtLiQ9XOL-npFctIRZ75HgwhSV5LMo=w526-h296-rw" alt="SkyRail Screenshot 3" class="game-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section id="links" class="info-section animate-up">
+            <h2 class="text-center mb-4">Links</h2>
+            <div class="text-center">
+                <a href="https://play.google.com/store/apps/details?id=com.skytech.rail_simulator" target="_blank" class="btn btn-custom me-2">SkyRail Game</a>
+                <a href="https://drive.google.com/file/d/15-BCtarQlNE8hbIDNv7x2pM2kx7lWUE5/view?usp=sharing" target="_blank" class="btn btn-custom me-2">Samsung IT School Certificate</a>
+                <a href="Kiselev_Aleksandr_CV.pdf" target="_blank" class="btn btn-custom">Download Resume</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Kiselev Aleksandr. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/skywalkerone" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/aleksandr-kiselev" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
