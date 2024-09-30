@@ -121,7 +121,7 @@
         }
 
         .game-image {
-            max-width: 80%; /* Reduced size for the game icon */
+            max-width: 100%; /* Ensure images scale responsively */
             border-radius: 10px;
         }
 
@@ -134,6 +134,17 @@
         .list-check {
             list-style: none;
             padding-left: 0;
+        }
+
+        /* Responsive links */
+        .link-group {
+            display: flex;
+            flex-wrap: wrap; /* Allow links to wrap on small screens */
+            justify-content: center; /* Center the links */
+        }
+
+        .link-group .btn {
+            margin: 5px; /* Space between buttons */
         }
     </style>
 </head>
@@ -240,17 +251,17 @@
         <section id="game" class="info-section animate-up">
             <h2 class="text-center mb-4">My Game: SkyRail</h2>
             <div class="text-center">
-                <img src="https://play-lh.googleusercontent.com/Z_zTA_ZL2EB__IWtB2vReLYrcICyjIztdI6CIkff3aKfHFWYfDbTWVu7ysVtPt30H28" alt="SkyRail Icon" class="game-image mb-4">
+                <img src="https://play-lh.googleusercontent.com/Z_zTA_ZL2EB__IWtB2vReLYrcICyjIztdI6CIkff3aKfHFWYfDbTWVu7ysVtPt30H28" alt="SkyRail Icon" class="game-image mb-4" style="max-width: 80px;">
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://play-lh.googleusercontent.com/g03pMGjXKLXg6Ub5Srz09iR1q-lzrzGnyAWxahny2j41coOA4WV7nqVSQ2fAmRVURQ=w526-h296-rw" alt="SkyRail Screenshot 1" class="game-image">
+            <div class="row text-center">
+                <div class="col-4 col-md-4">
+                    <img src="https://play-lh.googleusercontent.com/g03pMGjXKLXg6Ub5Srz09iR1q-lzrzGnyAWxahny2j41coOA4WV7nqVSQ2fAmRVURQ=w526-h296-rw" alt="SkyRail Screenshot 1" class="game-image mb-2">
                 </div>
-                <div class="col-md-4">
-                    <img src="https://play-lh.googleusercontent.com/8gjN3qp0aaoLL9KlPOaz6Mw0ntTdx0fWxQfFJIjUBUCAoUF3yOnVX5Mq2fD-TacGDTg=w526-h296-rw" alt="SkyRail Screenshot 2" class="game-image">
+                <div class="col-4 col-md-4">
+                    <img src="https://play-lh.googleusercontent.com/8gjN3qp0aaoLL9KlPOaz6Mw0ntTdx0fWxQfFJIjUBUCAoUF3yOnVX5Mq2fD-TacGDTg=w526-h296-rw" alt="SkyRail Screenshot 2" class="game-image mb-2">
                 </div>
-                <div class="col-md-4">
-                    <img src="https://play-lh.googleusercontent.com/c_KT4ufb2kH6PIY39NmXzIWOiABJWOI4ZVpKIGtLiQ9XOL-npFctIRZ75HgwhSV5LMo=w526-h296-rw" alt="SkyRail Screenshot 3" class="game-image">
+                <div class="col-4 col-md-4">
+                    <img src="https://play-lh.googleusercontent.com/c_KT4ufb2kH6PIY39NmXzIWOiABJWOI4ZVpKIGtLiQ9XOL-npFctIRZ75HgwhSV5LMo=w526-h296-rw" alt="SkyRail Screenshot 3" class="game-image mb-2">
                 </div>
             </div>
         </section>
@@ -258,9 +269,9 @@
         <!-- Links Section -->
         <section id="links" class="info-section animate-up">
             <h2 class="text-center mb-4">Links</h2>
-            <div class="text-center">
-                <a href="https://play.google.com/store/apps/details?id=com.skytech.rail_simulator" target="_blank" class="btn btn-custom me-2">SkyRail Game</a>
-                <a href="https://drive.google.com/file/d/15-BCtarQlNE8hbIDNv7x2pM2kx7lWUE5/view?usp=sharing" target="_blank" class="btn btn-custom me-2">Samsung IT School Certificate</a>
+            <div class="link-group text-center">
+                <a href="https://play.google.com/store/apps/details?id=com.skytech.rail_simulator" target="_blank" class="btn btn-custom">SkyRail Game</a>
+                <a href="https://drive.google.com/file/d/15-BCtarQlNE8hbIDNv7x2pM2kx7lWUE5/view?usp=sharing" target="_blank" class="btn btn-custom">Samsung IT School Certificate</a>
                 <a href="Kiselev_Aleksandr_CV.pdf" target="_blank" class="btn btn-custom">Download Resume</a>
             </div>
         </section>
